@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>ZanzaraPedia</title><link rel="stylesheet" href="css/style.css"/></head>
+<body>
+  <main id="app">
+    <header><h1>ZanzaraPedia</h1><p>Archivio audio iconici — scansiona il QR o scegli qui sotto</p></header>
+    <section id="list"></section>
+    <footer><small>Progetto fan • Audio per scopi archivistici</small></footer>
+  </main>
+  <script src="scripts/data.js"></script>
+  <script>
+    const list = document.getElementById('list');
+    audioData.forEach(a => {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `<img src="${a.thumb||'https://via.placeholder.com/96'}" alt="${a.name}" />
+        <div><h3>${a.name}</h3><p>${a.desc||''}</p>
+        <a class="play" href="players/play.html?id=${encodeURIComponent(a.id)}">Ascolta</a></div>`;
+      list.appendChild(card);
+    });
+  </script>
+</body>
+</html>
