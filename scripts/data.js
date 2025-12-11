@@ -1,13 +1,10 @@
-// Lista degli audio da visualizzare
-const audioData = [
+const data = [
     {
-        name: "Esempio 1",
-        file: "audio/esempio1.mp3",
-        thumb: "imgs/thumb1.jpg"
+        nome: "Zanzara Tigre",
+        descrizione: "Aggressiva, pungente e molto attiva nelle ore diurne."
     },
     {
-        name: "Esempio 2",
-        file: "audio/esempio2.mp3",
-        thumb: "imgs/thumb2.jpg"
+        nome: "Zanzara Comune",
+        descrizione: "La classica fastidiosa compagna delle sere d’estate."
     }
 ];
