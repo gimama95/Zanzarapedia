@@ -1,43 +1,27 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 0;
+    background: #111;         /* nero/grigio scuro */
+    color: #e0ffe0;           /* verde chiarissimo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: white;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #000;
+    border-bottom: 3px solid #00ff6a; /* verde neon */
 }
 
-#list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 15px;
-  padding: 20px;
+header h1 {
+    font-size: 3rem;
+    color: #00ff6a;  /* verde neon */
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.play a {
-  display: inline-block;
-  padding: 8px 12px;
-  margin-top: 8px;
-  background: #0077ff;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
+.item-box {
+    background: #1c1c1c;
+    border-left: 4px solid #00ff6a;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
 }
